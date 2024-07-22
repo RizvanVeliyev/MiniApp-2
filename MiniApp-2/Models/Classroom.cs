@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MiniApp_2.Enums;
+using MiniApp_2.Exceptions;
 
-namespace MiniApp_2
+namespace MiniApp_2.Models
 {
     class Classroom
     {
@@ -36,7 +33,7 @@ namespace MiniApp_2
 
         public Student FindStudentById(int id)
         {
-            if(Students.Find(s => s.Id == id)==null) throw new StudentNotFountException("Bele bir id ile telebe tapilmadi!");
+            if (Students.Find(s => s.Id == id) == null) throw new StudentNotFoundException("Bele bir id ile telebe tapilmadi!");
 
             return Students.Find(s => s.Id == id);
         }
@@ -49,7 +46,7 @@ namespace MiniApp_2
                 Students.Remove(student);
                 return true;
             }
-            throw new StudentNotFountException("Silmek ucun bele bir id ile telebe tapilmadi!");
+            throw new StudentNotFoundException("Silmek ucun bele bir id ile telebe tapilmadi!");
         }
     }
 }

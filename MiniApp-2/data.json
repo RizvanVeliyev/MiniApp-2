@@ -1,0 +1,1 @@
+[{"Id":1,"Name":"PB303","Type":1,"Students":[{"Id":1,"Name":"Rizvan","Surname":"Veliyev"},{"Id":2,"Name":"Eli","Surname":"Veliyev"}]},{"Id":2,"Name":"TR555","Type":2,"Students":[{"Id":3,"Name":"Mahmood","Surname":"Garibov"},{"Id":4,"Name":"Eli","Surname":"Ehmedov"}]},{"Id":3,"Name":"ER111","Type":1,"Students":[{"Id":5,"Name":"Sema","Surname":"Abbasova"}]}]
